@@ -1,0 +1,66 @@
+extends layouts/default
+
+block css
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' rel='stylesheet')
+  
+mixin news(news)
+  .news-item
+    .col-md-3
+      h3.text-weight-light.black-text {news.title}
+      h4 {news.subtitle} 
+      p.white-text 
+        a(href='') Read
+    .col-md-3
+      | Image Here
+      //img.center-block.img-responsive(src=introduction.image.url height='380').img-rounded 
+
+mixin sponsor(sponsor)
+  .sponsor-item
+    | Sponsor Image
+    //img(src=galleryImage.image.url, alt='' width='338' height='244') 
+
+block content
+  #main-content 
+    .row.mx-auto
+      .col-md-4
+        #next-game-area(style='margin: 15px;  height: 260px;')
+          h2 Standings
+        #watch-area(style='margin: 15px;  height: 130px;') 
+          h2 Watch Online 
+      .col-md-8
+        #news-area(style='margin: 15px; height: 425px;')
+          h2 Latest News
+          .news-carousel.owl-carousel.white-background.rounded
+            //each introduction in data.introductions
+            //  +introduction(introduction)
+    .row.mx-auto
+      .col-md-12.center-block
+        #sponsors-area(style='margin: 15px; height: 130px;')   
+          h2 Sponsors
+            .sponsors-carousel.owl-carousel.white-background.rounded
+          //each sponsor in data.sponsors
+          //  +sponsor(sponsor) 
+    .row.mx-auto
+      .col-md-12.center-block
+        #leauge-cal-area(style='margin: 15px; height: 380px;')
+          h2 League Calendar
+
+block js
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+  script.
+    $(document).ready(function () {      
+      $('.news-carousel').owlCarousel({
+        autoplay: true, dots: true, loop: true, pagination: true, navigation: true,
+        responsive: { 0: { items: 1 }, 768: { items: 1 }, 900: { items: 1 } }
+      });
+      
+      $('.sponsors-carousel').owlCarousel({
+        autoplay: true, loop: true, pagination: false,
+        responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 8 } }
+      });
+
+      $('.back-to-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        return false;
+      });  
+    })

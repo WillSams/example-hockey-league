@@ -1,0 +1,38 @@
+#siteLinks.collapse.navbar-collapse
+  ul.navbar-nav
+    li.nav-item
+      a.nav-link(href='/') Home
+    li.nav-item
+      a.nav-link(href='/news') News 
+    li.nav-item
+      a.nav-link(href='/about') About
+    li.nav-item.dropdown
+      a.nav-item.nav-link.dropdown-toggle.mr-md-2(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Schools
+      .dropdown-menu
+        a.dropdown-item(href='/schools/AGAJ') JUCO Augusta, GA
+        a.dropdown-item(href='/schools/CTNJ') JUCO Chattanoga, TN
+        a.dropdown-item(href='/schools/JMSJ') JUCO Jackson, MS
+        a.dropdown-item(href='/schools/MOBJ') JUCO Mobile, AL
+        a.dropdown-item(href='/schools/MONJ') JUCO Montgomery, AL
+        a.dropdown-item(href='/schools/NOLAJ') JUCO New Orleans, LA
+        a.dropdown-item(href='/schools/SSCJ') JUCO Spartanburg, SC
+    li.nav-item
+      a.nav-link(href='/standings') Standings    
+    li.nav-item.dropdown
+      a.nav-item.nav-link.dropdown-toggle.mr-md-2(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Stats
+      .dropdown-menu
+        a.dropdown-item(href='/stats/teams') Teams
+        a.dropdown-item(href='/stats/skaters') Skaters
+        a.dropdown-item(href='/stats/goalies') Goalie
+    li.nav-item
+      a.nav-link(href='/commitments') Commitments 
+    li.nav-item
+      a.nav-link(href='/staff') Staff  
+    li.nav-item
+      a.nav-link(href='/partners') Partners
+    if user
+      if user.canAccessKeystone
+        li.nav-item: a.nav-link(href='/keystone') Admin
+      li.nav-item: a.nav-link(href='/keystone/signout') Logout

@@ -1,0 +1,86 @@
+players
+_______
+first_name, last_name, suffix, alias, gender, birth_locale, hometown_locale, shoots, glove, faves
+
+seasons
+________
+league_id (fk) manySs-to-oneL
+start_date_time
+end_date_time
+
+tournaments
+____________
+season_id (FK) manyTs-to-oneS
+tournament_type --------------- Regular Season, Playoffs, Fall Showcase, Winter Showcase
+teams
+start_date_time
+end_date_time
+
+teams
+______
+established_date_time
+folded_date_time
+home_site_id (fk)
+full_name
+abbreviation
+short_name
+city
+state
+country
+
+games
+_______
+
+start_date_time
+site_id (FK)     oneS-to-oneS
+tournament_id,
+game_status
+duration
+attendance
+last_update
+
+team_games
+__________________
+team_id
+scheduled_type ----------------- Home, Visitor
+game_id (FK)
+score
+event_outcome
+s
+sites
+_____
+street
+city
+state
+region
+postal_code
+country
+region
+district
+
+player_game_defensive_stats
+________________
+player_id
+team_game_id
+tournament_id
+saves
+save_percentage
+shots_blocked
+shutout
+hits
+faceoffs_won
+
+player_game_offensive_stats
+_____________________
+player_id
+team_game_id
+goals
+assists
+pim
+power_play_goals
+power_play_assists
+shorthanded_goals
+shorthanded_assists
+points
+
+

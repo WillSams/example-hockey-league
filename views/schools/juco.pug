@@ -1,0 +1,47 @@
+extends ../layouts/schools
+
+mixin player(player)  
+  .col-lg-3.col-md-4.center-block
+    .player-item.animated.bounceInDown.fast
+      a.player-popup(href=player.image.url)
+        img(src=player.image.url, alt='' width='170' height='120')
+        .player-overlay
+          .player-info
+            h5.animated.bounceInDown.fast #{player.name} 
+
+block css
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' rel='stylesheet')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' rel='stylesheet')
+
+block schoolplayerscontent 
+  h3 juco-augusta-content
+  h4 Goalies
+  .row.no-gutters
+    each goalie in data.goalies
+      +player(goalie) 
+  h4 Forwards
+  .row.no-gutters
+    each forward in data.forwards
+      +player(forward) 
+  h4 Defensemen
+  .row.no-gutters
+    each defenseman in data.defensemen
+      +player(defenseman) 
+
+block schoolstatscontent 
+  h3 juco-augusta-content
+
+block js
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+  script.
+    $(document).ready(function () {
+      $('.player-popup').magnificPopup({
+        type: 'image', removalDelay: 300, mainClass: 'mfp-fade', gallery: { enabled: true },
+        zoom: {
+          enabled: true, duration: 300, easing: 'ease-in-out',
+          opener: function (openerElement) {
+            return openerElement.is('img') ? openerElement : openerElement.find('img');
+          }
+        }
+      });
+    })

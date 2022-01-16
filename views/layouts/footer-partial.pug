@@ -1,0 +1,32 @@
+.row
+  .col-md-4.footer-side.center-block
+    span(style='padding-left: 5px;') Savannah, GA 31401
+    br
+    span.fa.fa-phone
+    span(style='padding-left: 5px;') 912.000.0000 
+    br
+    span.fa.fa-fax
+    span(style='padding-left: 5px;') 888.000.0000
+  .col-md-4.footer-side.center-block  
+    span
+      a.social-icon-md.fa.fa-envelope(href='/contact', target='_blank', aria-label='Email')
+      a.social-icon-md.fa.fa-google(href='', target='_blank', aria-label='Google')
+      a.social-icon-md.fa.fa-twitter(href='', target='_blank', aria-label='Twitter')
+      a.social-icon-md.fa.fa-instagram(href='', target='_blank', aria-label='Instagram')
+    br
+    | Copyright &copy; #{(new Date()).getFullYear().toString()} South East Junior College Hockey League
+    br
+    | Site by 
+    a.samswebs(href='https://www.samswebs.com') Sams Webs
+  .col-md-4.footer-side.center-block
+    span.fa.fa-gavel: a.anchor-fa(href='terms') Terms &amp; Conditons
+    br
+    span.fa.fa-gavel: a.anchor-fa(href='/privacy') Privacy Policy
+    br
+    span.fa.fa-lock
+    if user
+      if user.canAccessKeystone
+        a.anchor-fa(href='/keystone') Admin
+      a.anchor-fa(href='/keystone/sigout') Sign Out
+    else
+      a.anchor-fa(href='/keystone/signin') Sign In

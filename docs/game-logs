@@ -1,0 +1,37 @@
+
+//    -- Spartanburg
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=23817&lang_id=1
+{ game: 'SSCJ01', team: '7', scheduledType: 'home', score: 6, eventOutcome: 'win' }, 
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=23818&lang_id=1
+{ game: 'SSCJ02', team: '7', scheduledType: 'home', score: 9, eventOutcome: 'win' },
+
+//    -- New Orleans
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=23887&lang_id=1
+{ game: 'NOLAJ01', team: '6', scheduledType: 'home', score: 10, eventOutcome: 'win' }
+  
+//    -- Augusta
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=24267&lang_id=1
+{ game: 'AGAJ01', team: '1', scheduledType: 'home', score: 3, eventOutcome: 'win' },
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=23726&lang_id=1
+{ game: 'AGAJ02', team: '1', scheduledType: 'home', score: 6, eventOutcome: 'win' }, 
+
+//  -- Montgomery
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=24192&lang_id=1
+{ game: 'MONJ01', team: '5', scheduledType: 'home', score: 1, eventOutcome: 'loss' },
+
+//  -- Chattanooga
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=25026&lang_id=1
+{ game: 'CTNJ01', team: '2', scheduledType: 'home', score: 5, eventOutcome: 'win' },
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=23753&lang_id=1
+{ game: 'CTNJ02', team: '2', scheduledType: 'home', score: 4, eventOutcome: 'win' },
+
+//  -- Jackson
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=24030&lang_id=1
+{ game: 'JMSJ01', team: '3', scheduledType: 'home', score: 2, eventOutcome: 'loss' },
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=24336&lang_id=1
+{ game: 'JMSJ02', team: '3', scheduledType: 'home', score: 2, eventOutcome: 'loss' },
+    
+//  -- Mobile
+https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=nahl&game_id=24355&lang_id=1
+{ game: 'MOBJ01', team: '4', scheduledType: 'home', score: 1, eventOutcome: 'loss' },
+    

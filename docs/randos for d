@@ -1,0 +1,6 @@
+Forwards:
+
+shotsBlock: faker.random.number({ min: 00, max: 02 }), hits: faker.random.number({ min: 00, max: 03 }), faceoffsWon: faker.random.number({ min: 00, max: 14 })
+
+Defensemen:
+shotsBlock: faker.random.number({ min: 00, max: 03 }), hits: faker.random.number({ min: 00, max: 03 }), faceoffsWon: faker.random.number({ min: 00, max: 01 })

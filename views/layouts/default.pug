@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title='South East Junior College Hockey League'
+
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='keywords' content='')
+    
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:description', content='')
+    meta(name='twitter:title', content='')
+    meta(name='twitter:site', content='')
+    meta(name='twitter:creator', content='')
+
+    link(href='/images/favicon.ico' rel='icon')
+    link(href='/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    block css
+     
+    link(href='/css/application.css' rel='stylesheet')
+  body  
+    include navigation-partial
+    #default-container.container-fluid
+      .row.content               
+        .container  
+          .col-md-12.full-area-content
+            block content
+    footer.container-fluid.navbar-dark.bg-dark
+      include footer-partial
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+    script(src='/js/bootstrap.bundle.min.js')
+    //GOOGLE TAG INFO GOES HERE
+    script.  
+      $(document).ready(function () {
+        var url = window.location;
+        $('ul.navbar-nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.navbar-nav a').filter(function() {
+          return this.href == url;
+        }).parent().addClass('active');
+      });
+    //script(src='js/application.js')   
+
+    block js

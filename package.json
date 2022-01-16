@@ -1,0 +1,48 @@
+{
+  "name": "sejchl.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern 'public/' --ignore-pattern '*updates/'",
+    "start": "node keystone.js",
+    "test": "mocha specs --recursive",
+    "dev": "nodemon keystone.js",
+    "debug": "node --inspect-brk=0.0.0.0:9229 keystone.js"
+  },
+  "author": "William Sams",
+  "email": "will@samswebs.com",
+  "url": "http://www.samswebs.com",
+  "dependencies": {
+    "connect-mongo": "^2.0.3",
+    "keystone": "^4.0.0",
+    "keystone-email": "^1.1.0",
+    "lodash": "^4.17.11",
+    "memjs": "^1.2.0",
+    "pug": "^2.0.3"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --single-quote --trailing-comma es5 --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cypress": "^9.2.0",
+    "eslint-config-keystone": "^3.0.0",
+    "faker": "^4.1.0",
+    "husky": "^7.0.4",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "prettier": "^2.5.1"
+  }
+}

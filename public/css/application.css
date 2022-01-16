@@ -1,0 +1,180 @@
+html {
+  height: 100%;
+  width: 100%; }
+  html body {
+    font-family: 'Lato', sans-serif;
+    src: url("//fonts.googleapis.com/css?family=Lato") format("truetype");
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(249, 243, 197, 0.375), rgba(249, 243, 197, 0.375)), url("/images/default-bkg.jpg");
+    margin-top: 55px;
+    color: #646f6f;
+    font-weight: bolder;
+    background-color: #f9f3c5;
+    font-size: 18px; 
+  }
+    #react-app { margin-top: 100px; }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content { height: 1100px }
+    html body h1, html body h2, html body h3 {
+      font-weight: 100; }
+    html body .sams-heading {
+      font-weight: 100;
+      text-align: center;
+      color: #de1b1b; }
+    html body .samswebs {
+      font-family: 'Permanent Marker','Montserrat';
+      src: url("//fonts.googleapis.com/css?family=Permanent+Marker|Montserrat") format("truetype");
+      color: #f9f3c5;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    html body .samswebs:hover {
+      color: #de1b1b; }
+    html body a {
+      text-decoration: none; }
+    html body a:link {
+      text-decoration: none;
+      color: #87aab9; }
+    html body a:visited {
+      text-decoration: none;
+      color: #87aab9; }
+    html body a:hover {
+      text-decoration: none;
+      color: #f9f3c5; }
+    html body .row.content {
+      height: 1500px; }
+    html body .navbar {
+      color: #646f6f; }
+    html body .highlighted {
+      color: #e9e581; }
+    html body hr {
+      color: #f9f3c5;
+      background-color: #de1b1b; }
+    html body #countDown {
+      background-color: rgba(100, 111, 111, 0.75); }
+    html body .white-text {
+      color: #f9f3c5; }
+    html body .black-text {
+      color: #646f6f; }
+    html body .gold-text {
+      color: #e9e581; }
+    html body .red-background {
+      background-color: rgba(222, 27, 27, 0.85);
+      color: #f9f3c5; }
+    html body .black-background {
+      background-color: rgba(100, 111, 111, 0.75);
+      color: #f9f3c5; }
+    html body .white-background {
+      background-color: rgba(249, 243, 197, 0.375);
+      color: #646f6f; }
+    html body .gold-background {
+      background-color: rgba(233, 229, 129, 0.75);
+      color: #646f6f; }
+    html body .full-area-content {
+      padding-top: 35px;
+      padding-bottom: 75px;
+      height: auto;
+      margin: auto;
+      display: block; }
+    html body a.anchor-fa {
+      padding-left: 5px; }
+    html body .btn-xl {
+      padding: 1rem 1.75rem;
+    }
+    html body .center-block {
+      margin: auto;
+      display: block;
+      text-align: center; }
+    html body .social-icon-lg, html body .social-icon-md, html body .social-icon-sm {
+      padding: 10px; }
+    html body .social-icon-sm {
+      font-size: 10px; }
+    html body .social-icon-md {
+      font-size: 20px; }
+    html body .social-icon-lg {
+      font-size: 30px; }
+    html body .rounded {
+      padding: 5px 5px;
+      border-radius: .25rem !important; }
+    html body .back-to-top {
+      position: fixed;
+      display: none;
+      background: rgba(222, 27, 27, 0.85);
+      color: #f9f3c5;
+      padding: 6px 12px 9px 12px;
+      border-radius: 2px;
+      right: 15px;
+      bottom: 15px;
+      transition: background 0.5s;
+      z-index: 1000; }
+    html body .back-to-top:focus {
+      background: rgba(249, 243, 197, 0.375);
+      color: #de1b1b;
+      outline: none; }
+    html body .back-to-top:hover {
+      background: rgba(222, 27, 27, 0.85);
+      color: #f9f3c5; }
+    html body #news-area, html body #next-game-area, html body #watch-area, html body #sponsors-area, html body #leauge-cal-area {
+      background-color: rgba(100, 111, 111, 0.75); }
+    html body #contact-content {
+      background-color: rgba(100, 111, 111, 0.75);
+      color: #f9f3c5; }
+      html body #contact-content h2, html body #contact-content h3 {
+        color: #f9f3c5; }
+    html body #default-container #players-section, html body #default-container #stats-section {
+      margin: 15px;
+      height: 1100px; }
+    html body .player-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all ease-in-out 0.4s; }
+    html body .player-item {
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      vertical-align: middle;
+      text-align: center; }
+    html body .player-item h5 {
+      color: #f9f3c5;
+      margin: 0;
+      text-transform: capitalize;
+      font-weight: 700; }
+    html body .player-item img {
+      transition: all ease-in-out 0.4s;
+      width: 100%; }
+    html body .player-item:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    html body .player-item:hover .player-overlay {
+      opacity: 1;
+      background: #646f6f; }
+    html body .player-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    html body footer {
+      background-color: #646f6f;
+      color: #f9f3c5;
+      padding: 15px;
+      margin: auto auto;
+      text-align: center; }
+    @media screen and (max-width: 767px) {
+      html body .full-area-content {
+        padding-top: 50px;
+        padding-bottom: 155px; }
+      html body .row.content {
+        height: auto; }
+      html body footer[class*="col-md-8"].pull-right {
+        float: none; } }

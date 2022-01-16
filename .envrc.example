@@ -1,0 +1,11 @@
+export NODE_ENV=development
+export COOKIE_SECRET=c00ki3s3cr3t
+
+export MONGO_PORT=
+export MONGO_URI=mongodb://sejchl-dev-user:passw0rd123@127.0.0.1:${MONGO_PORT}/sejchl-dev
+
+export PORT=8282
+
+export MEMCACHE_SERVER=localhost:11211
+
+export CLOUDINARY_URL=
