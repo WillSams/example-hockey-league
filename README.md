@@ -2,6 +2,8 @@
 
 WIP
 
+For an abandoned KeystoneJS 4.0 example from 3 years ago, see the `abandoned` branch.
+
 ## Pre-requisites
 
 First of all, these instructions will only be targeting Debian-based distros (Ubuntu, Linux Mint, etc.) but they can also work under [Windows using the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about).  The following tools need to be installed:
