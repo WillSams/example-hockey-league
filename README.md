@@ -1,4 +1,6 @@
-# React/GraphQL/DynamoDb Example Site - SECJHL Hockey League
+# Example Site - SEJCHL Hockey League
+
+A full-stack application using React, GraphQL, & AWS DynamoDb.
 
 WIP
 
